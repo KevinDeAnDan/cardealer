@@ -6,8 +6,6 @@ import logo from '../../assets/img/logocar.png';
 const cx = classNames.bind(styles);
 
 function Header() {
-    
-
     return (
         <>
             <header className={cx('wrapper')}>
@@ -39,7 +37,7 @@ function Header() {
                 </div>
             </header>
         </>
-    );
+    )    
 }
 
 export default Header;

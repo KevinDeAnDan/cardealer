@@ -9,7 +9,7 @@ function PieChart() {
         margin={{ top: 40, right: 70, bottom: 80, left: 80 }}
         sortByValue={true}
         activeOuterRadiusOffset={8}
-        colors={{ scheme: 'category10' }}
+        colors={{ scheme: 'category10' }}   
         borderWidth={1}
         borderColor="#c8c9ca"
         arcLinkLabelsTextOffset={11}
@@ -47,7 +47,7 @@ function PieChart() {
                 translateX: 0,
                 translateY: 56,
                 itemsSpacing: 0,
-                itemWidth: 70,
+                itemWidth: 80,
                 itemHeight: 18,
                 itemTextColor: '#999',
                 itemDirection: 'left-to-right',
