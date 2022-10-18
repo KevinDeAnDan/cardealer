@@ -1,0 +1,54 @@
+.wapper {
+    margin: 0 10%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    margin-top: 60px;
+}
+
+.banner {
+    
+}
+
+.banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -100px;
+    z-index: 99;
+}
+
+.banner2 {
+    width: 660px;
+    position: absolute;
+    right: -115px;
+    top: 90px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.text__1 {
+
+}
+
+.text__2 {
+    font-size: 1.6rem;
+}
+
+.btn__info {
+    border: none;
+    background-color: var(--primary);
+    z-index: 100;
+    margin-top: 30px;
+    font-weight: 500;
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--text-color);
+    }
+}

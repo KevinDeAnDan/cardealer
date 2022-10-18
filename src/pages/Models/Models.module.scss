@@ -1,0 +1,67 @@
+.wapper {
+    margin: 20px 10% 0;
+    margin-top: 100px;  
+}
+
+.title {
+    font-weight: 900;
+}
+
+.navbar {
+    margin-top: 30px;
+}
+
+.car__btn {
+    padding: 5px 30px;
+    background-color: #fff;
+    border: 0.1px solid #bbb;
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--text-color);
+        border: 0.1px solid var(--primary);
+    }
+
+    &:focus {
+        background-color: var(--primary);
+        color: var(--text-color);
+        border: 0.1px solid var(--primary);
+        outline: none;
+    }
+}
+
+.car__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car__item {
+    width: 290px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.car__img {
+    width: 290px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.car__h5 {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.car__h6 {
+    font-weight: 500;
+    color: rgb(53, 52, 52);
+    margin-bottom: 3px;
+    font-size: 0.8rem;
+}
+
+.car__p {
+    font-weight: 400;
+    color: rgb(65, 63, 63);
+}
