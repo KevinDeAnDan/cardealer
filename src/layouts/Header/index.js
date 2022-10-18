@@ -17,7 +17,7 @@ function Header() {
                         <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/news">
                             Tin Tức
                         </NavLink>
-                        <NavLink className={cx('nav-bar')} to="/about">
+                        <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/models" className={cx('nav-bar')} to="/about">
                             Giới Thiệu
                         </NavLink>
                         <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/models">

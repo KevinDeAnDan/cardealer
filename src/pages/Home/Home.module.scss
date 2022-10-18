@@ -6,11 +6,9 @@
     position: relative;
     display: flex;
     margin-top: 60px;
+    padding-bottom: 650px;
 }
 
-.banner {
-    
-}
 
 .banner1 {
     width: 1000px;
@@ -26,8 +24,18 @@
     top: 90px;
 }
 
-.text {
+
+.contain {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+}
+
+.contain-imgs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.contain-img {
+    width: 49%;
 }
