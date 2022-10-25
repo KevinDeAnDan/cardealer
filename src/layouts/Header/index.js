@@ -21,12 +21,12 @@ function Header() {
                             Giới Thiệu
                         </NavLink>
                         <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/models">
-                            Mẫu Xe
+                            Xe BMW
                         </NavLink>
-                        <NavLink className={cx('nav-bar')} to="/help">
+                        <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/help">
                             Trợ Giúp
                         </NavLink>
-                        <NavLink className={cx('nav-bar')} to="/contact">
+                        <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/contact">
                             Liên Hệ
                         </NavLink>
                     </div>

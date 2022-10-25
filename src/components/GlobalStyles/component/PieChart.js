@@ -2,8 +2,14 @@ import { ResponsivePie } from '@nivo/pie'
 import { mockData as data } from '../../../data/mocData';
 
 
-function PieChart() {
-
+function PieChart() { 
+    // const [increase, SetIncrease] = useState(click)
+    // Object.keys(data).forEach((props) => {
+    //     if(data[props].id === 'thích'){
+    //         console.log(data[props].value + 1);
+    //     }
+    // })
+    
     return (  <ResponsivePie
         data={data}
         margin={{ top: 40, right: 70, bottom: 80, left: 80 }}

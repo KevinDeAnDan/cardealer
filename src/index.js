@@ -11,6 +11,7 @@ import Models from './pages/Models';
 import News from './pages/News';
 import Login from './pages/Account/Login';
 import Register from './pages/Account/Register';
+import Contact from './pages/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,8 +22,9 @@ root.render(
                     <Route path="/" element={<App />}>
                         <Route path="home" element={<Home />} />
                         <Route path="news" element={<News />} />
-                        <Route path="About" element={<About />} />
+                        <Route path="about" element={<About />} />
                         <Route path="models" element={<Models />} />
+                        <Route path="contact" element={<Contact />} />
                         <Route path="login" element={<Login />} />
                         <Route path="register" element={<Register />} />
                         <Route index element={<Home />} />

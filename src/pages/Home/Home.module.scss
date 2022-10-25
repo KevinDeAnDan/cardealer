@@ -6,9 +6,13 @@
     position: relative;
     display: flex;
     margin-top: 60px;
-    padding-bottom: 650px;
+    padding-bottom: 550px;
 }
 
+.text {
+    margin-top: 40px;
+    font-weight: 900;
+}
 
 .banner1 {
     width: 1000px;
@@ -39,3 +43,39 @@
 .contain-img {
     width: 49%;
 }
+
+.owner-items {
+    display: flex;
+    
+}
+
+.owner-items {
+    text-align: center;
+}
+
+.owner-item__h5 {
+    font-weight: 700;
+}
+
+.owner-item__icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.owner-item__h2 {
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+.owner-item__p {
+    color: rgb(129, 126, 126);
+}
+
+.owner-item__link {
+    color: var(--main);
+    font-weight: 500;
+}
+

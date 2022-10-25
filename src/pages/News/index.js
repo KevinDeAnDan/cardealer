@@ -4,10 +4,16 @@ import avatar from '../../assets/img/avt1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faThumbsUp, faThumbsDown, faFlag, faComment } from '@fortawesome/free-solid-svg-icons';
 import PieChart from '../../components/GlobalStyles/component/PieChart';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function News() {
+    
+    const [click, setClick] = useState(0)
+    const handleClick = () => {
+        setClick(click + 1)
+    }
     return <div className={cx('wapper')}>
     <div className={cx('wapper-child')}>
         <h2 className={cx('title-h2')}>Bài viết nổi bật</h2>
@@ -28,8 +34,8 @@ function News() {
                     <span className={cx('post-time')}>7 ngày trước</span>
                     <hr/>
                     <div className={cx('feed-back')}>
-                        <div className={cx('feed-back__child')}>
-                            <span>1</span>
+                        <div className={cx('feed-back__child')} onClick={handleClick}>
+                            <span>{click}</span>
                             <FontAwesomeIcon className={cx('feed-back__icon1')} icon={faThumbsUp}/>
                         </div>
                         <div className={cx('feed-back__child')}>
@@ -78,7 +84,7 @@ function News() {
                 
             </div>
             <div className={cx('data-rating')}>
-                <PieChart/>
+                <PieChart click={click} handleClick={handleClick}/>
             </div>
         </div>
     </div>

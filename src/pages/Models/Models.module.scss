@@ -34,34 +34,3 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.car__item {
-    width: 290px;
-    margin-top: 50px;
-    cursor: pointer;
-}
-
-.car__img {
-    width: 290px;
-
-    &:hover {
-        opacity: 0.8;
-    }
-}
-
-.car__h5 {
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-.car__h6 {
-    font-weight: 500;
-    color: rgb(53, 52, 52);
-    margin-bottom: 3px;
-    font-size: 0.8rem;
-}
-
-.car__p {
-    font-weight: 400;
-    color: rgb(65, 63, 63);
-}

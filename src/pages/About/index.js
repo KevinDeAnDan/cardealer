@@ -27,7 +27,7 @@ function About() {
                     <h6 className={cx('title-h6')}>Giá Trị</h6>
                     <p>Vì tất cả những sản phẩm cũng như dịch vụ trên mà BMW Việt Nam chúng tôi đem tới cho khách hàng, chúng tôi tin tưởng rằng, quý khách hàng sẽ thật sự hài lòng khi sử dụng sản phẩm và dịch vụ của BMW tại Việt Nam.</p>
                     <h5 className={cx('title-h5')}>Đào tạo & Phát triển</h5>
-                    <p>Mục đích.Thaco cam kết huấn luyện và phát triển cho toàn thể nhân viên nhằm đạt được mục tiêu kinh doanh và làm lớn mạnh tiềm năng nhân sự qua việc tạo ra nuôi dưỡng một môi trường làm việc năng động, sáng tạo, chuyên nghiệp.Tuyên bố cam kết.BMW Việt NAm cam kết tiếp tục đào tạo và phát triển nhân viên trong cả kỹ năng nghề nghiệp và trong việc huấn luyện lâu dài cho sự phát triển cá nhân. Mỗi Nhân viên BMW là một tài sản quí giá nhất của công ty và hỗ trợ phát triển là điều quan trọng trong việc đạt được thành tích của công ty.</p>
+                    <p>Mục đích Thaco cam kết huấn luyện và phát triển cho toàn thể nhân viên nhằm đạt được mục tiêu kinh doanh và làm lớn mạnh tiềm năng nhân sự qua việc tạo ra nuôi dưỡng một môi trường làm việc năng động, sáng tạo, chuyên nghiệp.Tuyên bố cam kết.BMW Việt NAm cam kết tiếp tục đào tạo và phát triển nhân viên trong cả kỹ năng nghề nghiệp và trong việc huấn luyện lâu dài cho sự phát triển cá nhân. Mỗi Nhân viên BMW là một tài sản quí giá nhất của công ty và hỗ trợ phát triển là điều quan trọng trong việc đạt được thành tích của công ty.</p>
                     <span>Chúc quý khách hàng của BMW gặp nhiều may mắn và thành công!</span>
                     <p>Trân trọng cám ơn!</p>
                 </div>
