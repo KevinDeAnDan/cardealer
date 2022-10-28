@@ -12,6 +12,8 @@ import News from './pages/News';
 import Login from './pages/Account/Login';
 import Register from './pages/Account/Register';
 import Contact from './pages/Contact';
+import CreateCar from './admin/createCars';
+import Detail from './pages/Models/Detail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +29,8 @@ root.render(
                         <Route path="contact" element={<Contact />} />
                         <Route path="login" element={<Login />} />
                         <Route path="register" element={<Register />} />
+                        <Route path="create" element={<CreateCar />} />
+                        <Route path="/models/:slug" element={<Detail />} />
                         <Route index element={<Home />} />
                     </Route>
                 </Routes>

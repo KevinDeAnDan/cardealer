@@ -13,7 +13,7 @@ function App() {
                 <Outlet/>
             </div>
             <div>
-                {location.pathname === '/login' || location.pathname==='/register' || <Footer/>}
+                {location.pathname === '/login' || location.pathname==='/register' || location.pathname==='/create' || <Footer/>}
             </div>
         </div>
     );

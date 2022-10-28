@@ -1,0 +1,28 @@
+.wapper {
+
+}
+
+.wapper-child {
+    margin: 20px 10% 0;
+}
+
+.title {
+    margin-top: 100px;
+    font-weight: 900;
+
+}
+
+.info-input {
+    margin-top: 30px;
+}
+
+.btn-car {
+    margin-top: 20px;
+    padding: 6px 14px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 6px;
+    &:hover {
+        color: #fff;
+    }
+}
