@@ -13,7 +13,7 @@ function Detail() {
     useEffect(() => {
         setLoading(true);
         
-        axios.get(`http://localhost:9000/items/${slug}`)
+        axios.get(`http://localhost:9000/product/${slug}`)
             .then((res) => {        
                 setData(res.data)
                 console.log(res.data.video);

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const cx = classNames.bind(styles);
 const getProductCars = () => 
-    axios.get("http://localhost:9000")
+    axios.get("http://localhost:9000/product")
         .then((res) => res.data)
 
 class Cars extends React.Component {

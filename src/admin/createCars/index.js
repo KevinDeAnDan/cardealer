@@ -2,27 +2,43 @@ import styles from './CreateCar.module.scss';
 import classNames from 'classnames/bind';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import axios from 'axios'
 import { useFormik } from 'formik'
+import { useNavigate } from 'react-router-dom';
+
 const cx = classNames.bind(styles);
 
 function CreateCar() {
 
+    const navigate = useNavigate();
+    
     const formik = useFormik({
         initialValues: {
             name: "",
-            type: "",
+            description: "",
             image: "",
-            video: "",
-            price: ""
+            price: "",
+            videoID: "",
         },
         onSubmit: values => {
-            console.log(values);
+            console.log(values);    
+            axios.post(`http://localhost:9000/product/create`, {
+                name: formik.values.name,
+                description: formik.values.description,
+                image: formik.values.image,
+                price: formik.values.price,
+                videoID: formik.values.videoID,
+            })
+            .then(res => {
+                console.log(res.data);
+                navigate('/models');
+            })
         }
     })
-    
-    // console.log(formik);
+
+
     return  <div className={cx('wapper')}>
-        <form onSubmit={formik.handleSubmit} method="POST" action="/create" className={cx('wapper-child')}>
+        <form onSubmit={formik.handleSubmit} method="POST" action="/models" className={cx('wapper-child')}>
             <h2 className={cx('title')}>Đăng siêu xe</h2>
             <div className={cx('info-input')}>
                 <Box
@@ -41,7 +57,7 @@ function CreateCar() {
                         maxWidth: '100%',
                     }}
                 >
-                    <TextField fullWidth label="Nhiên liệu" id="type" value={formik.values.type} onChange={formik.handleChange}/>
+                    <TextField fullWidth label="Nhiên liệu" id="description" value={formik.values.description} onChange={formik.handleChange}/>
                 </Box>
             </div>
             <div className={cx('info-input')}>
@@ -61,7 +77,7 @@ function CreateCar() {
                         maxWidth: '100%',
                     }}
                 >
-                    <TextField fullWidth label="Video ID" id="video" value={formik.values.video} onChange={formik.handleChange}/>
+                    <TextField fullWidth label="Video ID" id="videoID" value={formik.values.videoID} onChange={formik.handleChange}/>
                 </Box>
             </div>
             <div className={cx('info-input')}>
@@ -71,7 +87,7 @@ function CreateCar() {
                         maxWidth: '100%',
                     }}
                 >
-                    <TextField fullWidth label="Giá cả" id="price" value={formik.values.price} onChange={formik.handleChange}/>
+                    <TextField fullWidth label="Giá bán" id="price" value={formik.values.price} onChange={formik.handleChange}/>
                 </Box>
             </div>
             <button type="submit" className={cx('btn-car')}>Thêm xe</button>

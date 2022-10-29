@@ -7,13 +7,13 @@ function App() {
     return (
         <div className="App">
             <div>
-                {location.pathname === '/login' || location.pathname==='/register' || <Header/>}
+                {location.pathname === '/login' || location.pathname==='/register' || location.pathname==='/admin' || <Header/>}
             </div>
             <div>
                 <Outlet/>
             </div>
             <div>
-                {location.pathname === '/login' || location.pathname==='/register' || location.pathname==='/create' || <Footer/>}
+                {location.pathname === '/login' || location.pathname==='/register' || location.pathname==='/create' || location.pathname==='/admin' || <Footer/>}
             </div>
         </div>
     );
