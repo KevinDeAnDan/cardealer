@@ -2,7 +2,7 @@ export const mockData = [
     {
       "id": "thích",
       "label": "thích",
-      "value": 10,
+      "value": 1111,
       "color": "hsl(130, 70%, 50%)"
     },
     {

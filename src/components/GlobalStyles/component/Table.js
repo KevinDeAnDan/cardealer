@@ -1,58 +1,97 @@
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
+import { Link } from 'react-router-dom';
+
 
 function BasicExample() {
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState([])
-  useEffect(() => {
-      setLoading(true);
-      
-      axios.get(`http://localhost:9000/product/${slug}`)
-          .then((res) => {        
-              setData(res.data)
-              console.log(res.data.video);
-              setLoading(false)
-          })
-          .catch(() => {
-              setLoading(false)
-          })
+  useEffect(() => { 
+    getProducts();
+  }, []);
+
+  const [contacts, setContacts] = useState([]); 
+  const [loading, setLoading] = useState(false);
+
+  
+  const getProducts = async () => {
+      try {
+          const res = await axios.get('http://localhost:9000/product');
+          setContacts(res.data);
+          setLoading(true);
+      } catch (err) {}
+  };
 
 
-  }, [slug]);
+  const removeData = (id, e) => {
+    e.preventDefault()
+    fetch(`http://localhost:9000/product/${id}`, {
+        method: 'DELETE'
+    }).then(res => {
+        getProducts();
+    }).catch (err => {
 
+    }) 
+  }
+  
 
   return (
-    <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>STT</th>
-          <th>Tên siêu xe</th>
-          <th>N.Liệu</th>
-          <th>Ảnh</th>
-          <th>Video</th>
-          <th>Giá bán</th>
-          <th>Sửa</th>
-          <th>Xóa</th>
-        </tr>
-      </thead>
+    <Table striped bordered hover >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên siêu xe</th>
+                <th>Nguyên liệu</th>
+                {/* <th>Ảnh</th> */}
+                <th>Video</th>
+                <th>Giá bán</th>
+                {/* <th>Sửa</th> */}
+                <th>Xóa</th>
+            </tr>
+        </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>{data.name}</td>
-            <td>{data.description}</td>
-            <td>{data.image}</td>
-            <td>{data.videoID}</td>
-            <td>{data.price}</td>
-            <td>
-              <button style={{padding: '5px 15px', backgroundColor: 'var(--primary)', border: 'none', borderRadius: '6px'}}>Sửa</button>
-            </td>
-            <td>
-              <button style={{padding: '5px 15px', backgroundColor: 'var(--primary)', border: 'none', borderRadius: '6px'}}>Xóa</button>
-            </td>
-          </tr>
+            {loading &&
+                contacts.map((contact, index) => (
+                    <tr key={index}>
+                        <td>{index + 1}</td>
+                        <td>{contact.name}</td>
+                        <td>{contact.description}</td>
+                        {/* <td>{contact.image}</td> */}
+                        <td>{contact.videoID}</td>
+                        <td>{contact.price} VNĐ</td>
+                        {/* <td>
+                            <Link to={`${contact._id}/edit`}
+                                style={{
+                                    padding: '5px 15px',
+                                    backgroundColor: 'var(--primary)',
+                                    border: 'none',
+                                    borderRadius: '6px',
+                                    textDecoration: 'none',
+                                    color : '#000'
+                                }}
+                            >
+                                Sửa
+                            </Link>
+                        </td> */}
+                        <td>
+                            <Link
+                                style={{
+                                    padding: '5px 15px',
+                                    backgroundColor: 'var(--primary)',
+                                    border: 'none',
+                                    borderRadius: '6px',
+                                    textDecoration: 'none',
+                                    color : '#000'
+                                }}
+                                onClick={
+                                    (e) => removeData(contact._id, e)
+                                }
+                            >
+                                Xóa
+                            </Link>
+                        </td>
+                    </tr>
+                ))}
         </tbody>
-      )}
     </Table>
   );
 }

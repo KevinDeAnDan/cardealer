@@ -23,11 +23,11 @@ function Header() {
                         <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/models">
                             Xe BMW
                         </NavLink>
-                        <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/help">
-                            Trợ Giúp
-                        </NavLink>
                         <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/contact">
                             Liên Hệ
+                        </NavLink>
+                        <NavLink style={({isActive}) => {return {color: isActive ? '#fab915' : ''}}} className={cx('nav-bar')} to="/admin">
+                            ADMIN
                         </NavLink>
                     </div>
                     <div className={cx('header__right')}>

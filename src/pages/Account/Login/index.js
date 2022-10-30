@@ -9,17 +9,17 @@ const cx = classNames.bind(styles);
 
 function Login() {
     const [type, setType] = useState("password")
-    const [icon, setIcon] = useState(faEye)
+    const [icon, setIcon] = useState(faEyeSlash)
     const [value, setValue] = useState()
     const handleToggle = () => {
         
         if(type === "password"){
             setType("text")
-            setIcon(faEyeSlash)
+            setIcon(faEye)
         }
         else {
             setType("password")
-            setIcon(faEye)
+            setIcon(faEyeSlash)
         }
     }
     return (
@@ -48,8 +48,10 @@ function Login() {
                         </div>
                         <span className={cx('forgot-password')}>Quên mật khẩu?</span>
                         <div className={cx('form-footer')}>
-                            <Link className={cx('form-btn')}to="/register">Tạo tài khoản mới</Link>
-                            <button className={cx('form-btn')}>Đăng nhập</button>
+                            <Link className={cx('form-btn')} to="/register">Tạo tài khoản mới</Link>
+                            <Link to="/">
+                                <button className={cx('form-btn')}>Đăng nhập</button>
+                            </Link>
                         </div>
                     </form>
                 </div>

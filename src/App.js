@@ -2,6 +2,7 @@ import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 import { Outlet, useLocation } from 'react-router-dom';
 
+
 function App() {
     let location = useLocation();
     return (

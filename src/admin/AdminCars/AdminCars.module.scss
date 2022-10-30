@@ -1,0 +1,20 @@
+.wapper {
+    height: 100vh;
+    margin: 0 20px;
+}
+
+.admin-h2 {
+    text-align: center;
+}
+
+.admin-btn {
+
+    background-color: var(--primary);
+    border: none;
+    margin: 20px 2px;
+    border-radius: 6px;
+    padding: 5px 15px;
+    &:hover {
+        color: #fff;
+    }
+}
