@@ -11,7 +11,7 @@ function Footer() {
             <div className={cx('contain')}>
                 <h6>BMW VIỆT NAM</h6>
                 <h6>Hà Nội</h6>
-                <p className={cx('contact-icon__p')}>Địa chỉ: Số 132 đường Lê Duẩn, P. Nguyễn Du, Q. Hai Bà Trưng, Tp. Hà Nội.</p>
+                <p className={cx('contact-icon__p')}>Địa chỉ: KM 10 Nguyễn Trãi</p>
                 <h6>Đà Nẵng</h6>
                 <p className={cx('contact-icon__p')}>Địa chỉ: Số 356 đường Điện Biên Phủ, Q. Thanh Khê, Tp. Đà Nẵng.</p>
                 <h6>Tp. Hồ Chí Minh</h6>

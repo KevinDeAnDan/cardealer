@@ -37,6 +37,7 @@ class Cars extends React.Component {
                             <h5 className={cx('car__h5')}>{value.name}</h5>
                             <h6 className={cx('car__h6')}>{value.description}</h6>
                             <p className={cx('car__p')}>Giá từ {value.price} VNĐ</p>
+                           
                         </Link>
                     </div> 
                 )
