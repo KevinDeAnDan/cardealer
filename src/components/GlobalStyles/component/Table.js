@@ -58,20 +58,6 @@ function BasicExample() {
                         {/* <td>{contact.image}</td> */}
                         <td>{contact.videoID}</td>
                         <td>{contact.price} VNĐ</td>
-                        {/* <td>
-                            <Link to={`${contact._id}/edit`}
-                                style={{
-                                    padding: '5px 15px',
-                                    backgroundColor: 'var(--primary)',
-                                    border: 'none',
-                                    borderRadius: '6px',
-                                    textDecoration: 'none',
-                                    color : '#000'
-                                }}
-                            >
-                                Sửa
-                            </Link>
-                        </td> */}
                         <td>
                             <Link
                                 style={{

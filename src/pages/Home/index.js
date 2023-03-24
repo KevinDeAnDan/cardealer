@@ -14,7 +14,7 @@ const cx = classNames.bind(styles);
 function Home() {
     return <div className={cx('wapper')}>
         <div className={cx('container')}>
-            <h2 className={cx('text')}>Nhóm CAR - INTERNET & GT</h2>
+            <h2 className={cx('text')}>CAR - Điện toán đám mây</h2>
             <div className={cx('banner')}>
                 <img className={cx('banner1')} src={banner1} alt={banner1}/>
                 <img className={cx('banner2')} src={banner2} alt={banner2}/>
