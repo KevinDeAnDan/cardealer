@@ -1,5 +1,5 @@
-import Header from './layouts/Header';
-import Footer from './layouts/Footer';
+import Header from './layouts/header';
+import Footer from './layouts/footer';
 import { Outlet, useLocation } from 'react-router-dom';
 
 
