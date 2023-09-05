@@ -7,13 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App'
 import Home from './pages/home';
 import About from './pages/about';
-import Models from './pages/Models';
-import News from './pages/News';
-import Login from './pages/Account/login';
-import Register from './pages/Account/register';
+import Models from './pages/models';
+import News from './pages/news';
+import Login from './pages/account/login';
+import Register from './pages/account/register';
 import Contact from './pages/contact';
 import CreateCar from './admin/createCars';
-import Detail from './pages/Models/Detail';
+import Detail from './pages/models/detail';
 import AdminCars from './admin/adminCars';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
