@@ -12,9 +12,9 @@ import News from './pages/News';
 import Login from './pages/Account/Login';
 import Register from './pages/Account/Register';
 import Contact from './pages/Contact';
-import CreateCar from './admin/CreateCars';
+import CreateCar from './admin/createCars';
 import Detail from './pages/Models/Detail';
-import AdminCars from './admin/AdminCars';
+import AdminCars from './admin/adminCars';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
