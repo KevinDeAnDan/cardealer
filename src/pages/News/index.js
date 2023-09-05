@@ -5,7 +5,7 @@ import avatar1 from '../../assets/img/quocdat.jpg'
 import avatar2 from '../../assets/img/oma.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faThumbsUp, faThumbsDown, faFlag, faComment } from '@fortawesome/free-solid-svg-icons';
-import PieChart from '../../components/GlobalStyles/component/PieChart';
+import PieChart from '../../components/globalstyles/component/PieChart';
 import { useState } from 'react';
 
 const cx = classNames.bind(styles);

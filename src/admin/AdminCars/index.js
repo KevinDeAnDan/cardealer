@@ -1,6 +1,6 @@
 import styles from './AdminCars.module.scss';
 import classNames from 'classnames/bind';
-import BasicExample from '../../components/GlobalStyles/component/Table';
+import BasicExample from '../../components/globalstyles/component/Table';
 import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
