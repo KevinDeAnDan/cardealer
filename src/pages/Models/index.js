@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import styles from './Models.module.scss';
 import classNames from 'classnames/bind';
-import Cars from './Cars'
+import Cars from './cars'
 const cx = classNames.bind(styles);
 
 

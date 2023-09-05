@@ -5,13 +5,13 @@ import GlobalStyles from './components/GlobalStyles';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App'
-import Home from './pages/Home';
-import About from './pages/About';
+import Home from './pages/home';
+import About from './pages/about';
 import Models from './pages/Models';
 import News from './pages/News';
-import Login from './pages/Account/Login';
-import Register from './pages/Account/Register';
-import Contact from './pages/Contact';
+import Login from './pages/Account/login';
+import Register from './pages/Account/register';
+import Contact from './pages/contact';
 import CreateCar from './admin/createCars';
 import Detail from './pages/Models/Detail';
 import AdminCars from './admin/adminCars';
